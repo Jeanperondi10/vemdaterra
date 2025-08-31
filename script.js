@@ -92,8 +92,18 @@ async function enviarEmail(params) {
     emailjs.init("opqd51Lx9ibgRRZH0"); // chave pública
     try {
         await emailjs.send("service_io48tuj", "template_1laguyl", params);
-        alert("Enviado!");
     } catch (err) {
         alert("Falhou: " + err.text || err.message);
     }
 }
+
+async function enviarEmailAcesso() {
+    emailjs.init("opqd51Lx9ibgRRZH0"); // chave pública
+    try {
+        await emailjs.send("service_io48tuj", "template_m3188aj", {});
+    } catch (err) {
+        alert("Falhou: " + err.text || err.message);
+    }
+}
+
+enviarEmailAcesso()
