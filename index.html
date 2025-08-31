@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VemDaTerra</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <aside>
+        <nav class = 'navtopo'>
+            <img src="img.png" alt="logo">
+            <p class="titulo">VemDaTerra</p>
+        </nav>
+        <ul>
+            <p class = 'selected'>Entrevista</p>
+            <p>Checklist</p>
+            <p>Documentação</p>
+            <p>Gerenciar selo</p>
+        </ul>
+        <nav>
+            <p>Demonstração</p>
+        </nav>
+    </aside>
+    <section>
+        <nav>
+            <div class = 'toponav'>
+                <img src="img.png" alt="logo">
+                <p class="titulo">VemDaTerra</p>
+            </div>
+        </nav>
+        <article>
+            <div id='chatDisplay'>
+                <p class='recebida oculta' id="modeloEnviada"></p>
+                <p class='enviada oculta' id="modeloRecebida"></p>
+            </div>
+            <nav class = 'navtext'>
+                <input id = 'chatInput' type="text" placeholder="Escreva sua resposta aqui">
+                <img src="enviaIcon.png" alt="envia" id="enviaMsg">
+            </nav>
+        </article>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
